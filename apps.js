@@ -1,7 +1,9 @@
 "use strict"
 console.log("hi")
 
-//add table and container doc here and html 
+const container = document.getElementById("container");
+//add table const container = document.getElementById("container");
+doc here and html 
 
 const hours = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
 
@@ -41,18 +43,32 @@ City.prototype.generateCookiesEachHour = function () {
      City.prototype.render = function ( {
     constant containerElememnt. document.getElementById ("add element here once added in html")
 
-     })
+    })
 
-     const article =document.createElement("article");
-     containerElememnt.appendChild(article);
+    const article =document.createElement("article");
+    containerElememnt.appendChild(article);
 
-     const h3 = document.createElement("h3")
-     h3.textContent = this.City
-     article.appendChild(h3)
+    const h3 = document.createElement("h3")
+    h3.textContent = this.City
+    article.appendChild(h3)
 
-     const table =document.createElement(tr)
-     table.appendChild.(headRow)
+    const table =document.createElement(tr)
+    table.appendChild.(headRow)
 
+    const headerCell = document.createElement(tr)
+    table.appendChild(headerRow)
+ 
+    const seattleHeaderCell = document.createElement("th")
+    seattleHeaderCell.textContent = "seattle"
+    headerRow.appendChild(seattleHeaderCell)
+
+    const tokyoHeaderCell = document.createElement("th")
+    tokyoHeaderCell.textContent = "tokyo"
+    headerRow.appendChild(tokyoHeaderCell)
+
+    const dubaiHeaderCell = document.createElement(th)
+    dubaiHeaderCell.textContent = "dubai"
+    headerRow.appendChild(dubaiHeaderCell)
 
 
 

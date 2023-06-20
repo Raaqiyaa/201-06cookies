@@ -108,7 +108,6 @@ const tokyo = {
     },
     };
 
-
     const Dubai = {
         storeName: "Dubai",
         minCustPerHour: 11,
