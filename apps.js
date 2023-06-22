@@ -50,7 +50,7 @@ CookieStore.prototype. calcCustomersEachHour = function() {
         table.appendChild(tr)
 
         //table cell
-        let td = docuemnt.createElement('TD')
+        let td = document.createElement('td')
         tr.appendChild(td)
         
         //total
