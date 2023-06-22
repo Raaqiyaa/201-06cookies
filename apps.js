@@ -1,82 +1,88 @@
-"use strict"
-console.log("hi")
-
+// random number function 
+function randomNum(min, max) {
+return math.floor(math.random() *(max - min +1) +min)
+}
+// constant function 
 const container = document.getElementById("container");
-//add table const container = document.getElementById("container");
-doc here and html 
+const storeTable = document.getElementById("store-table");
 
 const hours = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
 
-// Constructor Function
-function City (name, minCustPerHour, maxCustPerHour, avgCookiesPerCust ) {
-
-    this.customersEachHour = 0;
-    this.cookiesEachHour = 0;
-    this.totalDailyCookies = 0;
-    this.minCustPerHour = minCustPerHour;
-    this.maxCustPerHour = maxCustPerHour;
-    this.avgCookiesPerCust = avgCookiesPerCust;
-    this.customersEachHour = this.generateCustomersEachHour();
-    this.cookiesEachHour = this.generateCookiesEachHour();
-    this.totalDailyCookies = this.generateTotalDailyCookies();
+function Cookiestore (name, minCustPerHour, maxCustPerHour, avgCookiesPerCust ) {
+    this.storeName = storeName;
+    this.maxCustPerHour = minCustPerHour;
+    this.avgCookiesPerHour = avgCookiesPerCust;
+    this.customersEachHour = [];
+    this.cookiessEachHour = [];
     this.render();
-
+    
 }
-
-//  random number generator 
-
-City.prototype. calcCustomersEachHour = function () {
-    for (let 1 = 0; i < hours.length; 1++) {
-         customersPerHour = Math.floor(Math.random() * (maxCustomers - minCustomers + 1)) + min
+    // calcCustomersEachHour
+CookieStore.prototype. calcCustomersEachHour = function() {
+    for (let i 0; i < hours.length; i++) {
+        this.customersEachHour = math.floor(this.custPerHour[i] *  this.avgCookiesPerHour)
+        
+        push(randomNum(this.minCustPerHour,this.maxCustPerHour))
     }
 }
-
-City.prototype.generateCookiesEachHour = function () {
-    for (let 1=0; 2<hours.length; i++);
-        let onehour = math.celi(this.customersEachHour[1]) * this.avgCookiesPerCust;
-        this.cookiesEachHour.PUSH.(oneHour);
-    
-
-    for let maths.floor(math.random() * (maxCustomers - minCustomers +1)) + minCustomers
+    // calcCookiesEachHour
+    CookieStore.prototype.calcCookiesEachHour = function () {
+    for (let i = 0; 1 < hours.length; i++);
+    cookiessEachHour =math.floor(this.custPerHour[i] * this.avgCookiesPerHour)
+        
 }
 
-     City.prototype.render = function ( {
-    constant containerElememnt. document.getElementById ("add element here once added in html")
-
+    CookieStore.prototype.render = function ( {
+    constant containerElememnt. document.getElementById
     })
 
-    const article =document.createElement("article");
-    containerElememnt.appendChild(article);
+    //render
+    CookieStore.prototype.render = function() {
+        this.calcCookiesEachHour()
+        this.calcCustomersEachHour
+    
 
-    const h3 = document.createElement("h3")
-    h3.textContent = this.City
-    article.appendChild(h3)
+        // table 
+        const table = document.getElementById('theTable')
 
-    const table =document.createElement(tr)
-    table.appendChild.(headRow)
+        // table rows
+        const tr = document.createElement('tr')
+        table.appendChild(tr)
 
-    const headerCell = document.createElement(tr)
-    table.appendChild(headerRow)
- 
-    const seattleHeaderCell = document.createElement("th")
-    seattleHeaderCell.textContent = "seattle"
-    headerRow.appendChild(seattleHeaderCell)
+        //table cell
+        let td = docuemnt.createElement('TD')
+        tr.appendChild(td)
+        
+        //total
+        let total = 0
+        console.log(this,custPerHour)
+        console.log(This.avgCookiesPerHour)
+        
+        //loop
+        for (let i = 0; i < this.cookiesPerHour; i++) {
+        td = document.createElement('td')
+        td.content = this.cookiesPerHour [i]
+        tr.appemdChild(td)
 
-    const tokyoHeaderCell = document.createElement("th")
-    tokyoHeaderCell.textContent = "tokyo"
-    headerRow.appendChild(tokyoHeaderCell)
+        total = total + this.cookiesPerHour[i]
+        }
+    }
+        CookieStore locations 
 
-    const dubaiHeaderCell = document.createElement(th)
-    dubaiHeaderCell.textContent = "dubai"
-    headerRow.appendChild(dubaiHeaderCell)
+        //total cells
+        td = document.createElement('td')
+        td.textcontent = total
+        tr.appendChild(td)
 
+        //constructor 
+        const seattle = new CookieStore("seattle",23, 65, 6.3);
+        const tokyo = new CookieStore("tokyo", 3, 24, 1.2)
+        const dubai = new CookieStore("dubai", 11, 38, 3.7)
+        const paris = new CookieStore("paris", 20, 16, 4.6)
+        const lima = new CookieStore("lima", 2, 16, 4.6)
 
+        const stores = [seattle, tokyo, dubai, paris, lima]
 
-
-
-
-
-
-
+        for (let i = 0); 1 < stores.length; i++
 
 

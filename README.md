@@ -1,1 +1,3 @@
-# 201-06cookies
+"use strict"
+console.log("hi")
+
